@@ -1,14 +1,14 @@
 {
   "name": "generator-pybottle",
   "version": "1.0.0",
-  "description": "Yeoman generator",
+  "description": "Yeoman generator for Python Bottle projects",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/saimon24/generator-pybottle-generator"
   },
-  "author": "Saimon <saimon@devdactic.com> (https://github.com/saimon24)",
+  "author": "Saimon <saimon@devdactic.com> (http://devdactic.com)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -16,12 +16,17 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "yeoman",
+    "python",
+    "bottle",
+    "cli"
   ],
   "dependencies": {
     "yeoman-generator": "^0.17.0",
-    "chalk": "^0.5.0",
-    "yosay": "^0.3.0"
+    "yosay": "^0.3.0",
+    "util": "^0.10.3",
+    "path": "^0.4.9"
   },
   "devDependencies": {
     "mocha": "*"
