@@ -4,7 +4,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 
-var PybottleGeneratorGenerator = yeoman.generators.Base.extend({
+var PybottleGenerator = yeoman.generators.Base.extend({
 
     promptUser: function() {
         var done = this.async();
@@ -60,4 +60,4 @@ var PybottleGeneratorGenerator = yeoman.generators.Base.extend({
     }
 });
 
-module.exports = PybottleGeneratorGenerator;
+module.exports = PybottleGenerator;
