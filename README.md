@@ -16,7 +16,7 @@ Make sure to have python virtualenv installed, if not run:
 
 ## Usage
 
-`$ yo pybottle-generator` - Generates a folder with everything needed for a python bottle project
+`$ yo pybottle` - Generates a folder with everything needed for a python bottle project
 
 `$ ./bootstrap.sh`- Installs all required python libs in the virtual env
 
