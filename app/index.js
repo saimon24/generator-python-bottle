@@ -6,7 +6,7 @@ var yosay = require('yosay');
 
 var PybottleGenerator = yeoman.generators.Base.extend({
 
-    promptUser: function() {
+    promptUserDialog: function() {
         var done = this.async();
 
         this.log(yosay(
@@ -34,7 +34,7 @@ var PybottleGenerator = yeoman.generators.Base.extend({
         this.mkdir("static/js");
     },
 
-    copyMainFiles: function(){
+    copyNeededFiles: function(){
         this.copy("_app.py", "app/app.py");
         this.copy("_main.css", "static/css/main.css");
 
@@ -56,7 +56,11 @@ var PybottleGenerator = yeoman.generators.Base.extend({
     },
 
     end: function () {
-        this.bowerInstall()
+        var done = this.async();
+        this.bowerInstall("", function(){
+        console.log("\nPlease run bootstrap.sh to install the python libs!\n");
+        done();
+    })
     }
 });
 
